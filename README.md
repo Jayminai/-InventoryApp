@@ -26,7 +26,7 @@ The Inventory Management System is a web application designed to streamline the 
 
 Clone the repository using the following command:
 
-   git clone https://github.com/Jayminai/-InventoryApp.git
+   ```git clone https://github.com/Jayminai/-InventoryApp.git```
    cd InventoryApp
 
 2. **Install dependencies:**
