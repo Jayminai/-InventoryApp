@@ -31,19 +31,15 @@ The Inventory Management System is a web application designed to streamline the 
 
 Navigate to both the frontend and backend directories to install required dependencies.
 
-    For the backend:
+For the backend:
 
+    cd backend
+    npm install
 
+For the frontend:
 
-cd backend
-npm install
-
-    For the frontend:
-
-
-
-cd ../frontend
-npm install
+    cd ../frontend
+    npm install
 
 ## Set up environment variables:
 
@@ -57,18 +53,14 @@ EMAIL_PASS=your_email_password
 
 ## Run the application:
 
-    Start the backend server:
+Start the backend server:
 
+    cd backend
+    node server.js
 
+Start the frontend application:
 
-cd backend
-node server.js
-
-    Start the frontend application:
-
-
-
-cd ../frontend
-npm start
+    cd ../frontend
+    npm start
 
 Your application should now be running at http://localhost:3000.
