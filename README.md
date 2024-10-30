@@ -24,7 +24,7 @@ The Inventory Management System is a web application designed to streamline the 
 
 1. **Clone the repository:**
 
-   git clone https://github.com/Jayminai/-InventoryApp.git
+   git clone https://github.com/Jayminai/InventoryApp.git
    
    cd InventoryApp
 
