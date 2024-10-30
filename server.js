@@ -53,7 +53,7 @@ cron.schedule('0 0 * * 0', async () => {
 
         const mailOptions = {
             from: process.env.EMAIL_USER,
-            to: 'georgegodstime62@gmail.com',
+            to: 'georgegodstime62@gmail.com, kelvinklein425@gmail.com',
             subject: 'Items in Transit Store for more than two weeks',
             text: emailContent
         };
