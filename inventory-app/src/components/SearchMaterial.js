@@ -9,7 +9,7 @@ const SearchMaterial = () => {
     const handleSearch = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.get(`http://localhost:3000/materials/search?name=${searchTerm}`);
+            const response = await axios.get(`https://papakay.vercel.app/materials/search?name=${searchTerm}`);
             setSearchResults(response.data);
         } catch (error) {
             console.error('Error searching materials:', error);

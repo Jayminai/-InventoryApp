@@ -7,7 +7,7 @@ const ShippedItems = () => {
     useEffect(() => {
         const fetchShippedItems = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/shipped');
+                const response = await axios.get('https://papakay.vercel.app/shipped');
                 setShippedItems(response.data);
             } catch (error) {
                 console.error('Error fetching shipped items', error);

@@ -18,7 +18,7 @@ const MaterialForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:3000/materials', formData);
+            await axios.post('https://papakay.vercel.app/materials', formData);
             alert('Material logged successfully');
         } catch (error) {
             alert('Error logging material');

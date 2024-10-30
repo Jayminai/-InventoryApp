@@ -12,7 +12,7 @@ const MaterialsInTransit = () => {
 
     const fetchMaterials = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/materials');
+            const response = await axios.get('https://papakay.vercel.app/materials');
             setMaterials(response.data);
         } catch (error) {
             console.error('Error fetching materials', error);
@@ -35,7 +35,7 @@ const MaterialsInTransit = () => {
     const handleEditSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.put(`http://localhost:3000/materials/${currentItem._id}`, currentItem); 
+            await axios.put(`https://papakay.vercel.app/materials/${currentItem._id}`, currentItem); 
             alert('Item updated successfully');
             setIsEditing(false);
             fetchMaterials(); 
@@ -52,7 +52,7 @@ const MaterialsInTransit = () => {
                 alert('Material not found');
                 return;
             }
-            await axios.post(`http://localhost:3000/materials/${id}/ship`, {
+            await axios.post(`https://papakay.vercel.app/materials/${id}/ship`, {
                 ...material,
                 dateShipped: new Date().toISOString(),
             });
@@ -67,7 +67,7 @@ const MaterialsInTransit = () => {
     const handleDelete = async (id) => {
         if (window.confirm('Are you sure you want to delete this material?')) {
             try {
-                await axios.delete(`http://localhost:3000/materials/${id}`);
+                await axios.delete(`https://papakay.vercel.app/materials/${id}`);
                 alert('Material deleted successfully');
                 fetchMaterials(); 
             } catch (error) {
