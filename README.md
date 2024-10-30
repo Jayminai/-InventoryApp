@@ -25,7 +25,7 @@ The Inventory Management System is a web application designed to streamline the 
 1. **Clone the repository**:
 
    git clone https://github.com/Jayminai/-InventoryApp.git
-   cd InventoryApp```
+   cd InventoryApp
 
 2. **Install dependencies:**
 
@@ -45,11 +45,9 @@ For the frontend:
 
 Create a .env file in the backend directory and add your MongoDB URI and email credentials:
 
-plaintext
-
-MONGO_URI=your_mongodb_uri
-EMAIL_USER=your_email@example.com
-EMAIL_PASS=your_email_password
+    MONGO_URI=your_mongodb_uri
+    EMAIL_USER=your_email@example.com
+    EMAIL_PASS=your_email_password
 
 ## Run the application:
 
