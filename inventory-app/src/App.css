@@ -7,6 +7,15 @@ body {
   color: #333;
 }
 
+.custom-link {
+  color: #112b25;
+  text-decoration: none;
+  border: 1px dotted #112b25;
+  padding: 0px 10px 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px 0 0;
+}
+
 /* Navigation Styles */
 nav {
   background-color: #112b25;
@@ -142,6 +151,21 @@ th {
   background-color: #000000;
 }
 
+.logo-image {
+  border-radius: 10px;
+  width: 1200px;
+  height: 500px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* Responsive Table Styles */
 @media only screen and (max-width: 768px) {
   table {
@@ -149,6 +173,11 @@ th {
   }
   th, td {
     padding: 5px;
+  }
+  .logo-image {
+    margin-top: 100px;
+    width: 90%;
+    height: auto;
   }
 }
 

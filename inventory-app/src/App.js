@@ -5,6 +5,7 @@ import MaterialList from './components/MaterialsInTransit';
 import ShippedItems from './components/ShippedItems';
 import SearchMaterial from './components/SearchMaterial';
 import './App.css';
+import wallpaper from './wallpaper.jpg';
 
 const App = () => {
     return (
@@ -20,7 +21,18 @@ const App = () => {
                 </nav>
 
                 <Routes>
-                    <Route path="/" element={<h1>Welcome to Inventory Management</h1>} />
+                    <Route 
+                        path="/" 
+                        element={
+                            <div className="home-container">
+                                <h1>
+                                    <a href="https://github.com/Jayminai/" className="custom-link">Jayminai</a> 
+                                    Inventory Management App
+                                </h1>
+                                <img src={wallpaper} alt="Jayminai Logo" className="logo-image" />
+                            </div>
+                        }
+                    />
                     <Route path="/log-material" element={<MaterialForm />} />
                     <Route path="/materials" element={<MaterialList />} />
                     <Route path="/shipped-items" element={<ShippedItems />} />

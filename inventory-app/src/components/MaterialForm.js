@@ -20,6 +20,12 @@ const MaterialForm = () => {
         try {
             await axios.post('https://papakay.vercel.app/materials', formData);
             alert('Material logged successfully');
+            setFormData({
+                name: '',
+                quantity: '',
+                description: '',
+                vessel: ''
+            });
         } catch (error) {
             alert('Error logging material');
         }
